@@ -1,0 +1,196 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #2b2b2b;
+  line-height: 1.5;
+}
+
+.container {
+  width: 96%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #2b1d14;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #d6a86f;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+  color: rgb(255, 255, 255);
+  padding: 120px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #d6a86f;
+  color: #2b1d14;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card span {
+
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.card img {
+  width: 101%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 110px;
+  margin-bottom: 1px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.review {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background: #2b1d14;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background: #2b1d14;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #d6a86f;
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
